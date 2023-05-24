@@ -142,7 +142,7 @@ export const ContainerMenu = styled.div `
   }
   .mobile-menu {
     display: inline-block;
-    margin-left: 86%;
+    margin-left: 77%;
     
   }
  

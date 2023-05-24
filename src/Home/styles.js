@@ -15,6 +15,7 @@ export const Container = styled.div `
   width: 23rem;
   border-radius: 50%;
   display: flex;
+  border: 7px solid blue;
  
   }
 
@@ -58,6 +59,7 @@ export const Container = styled.div `
 }
 .home .sobre li {
   margin: 2rem 0;
+  
   /* display: flex;
   flex-direction: column; */
 }
@@ -68,6 +70,7 @@ export const Container = styled.div `
  border-radius:1rem;
  font-size:1.5rem;
  font-family: 'Roboto', sans-serif;
+ 
 
 }
 .home .sobre li a:hover {
@@ -83,7 +86,8 @@ export const Container = styled.div `
   margin:2rem 0;
   padding: 0;
   width: 400px;
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;line-height: 2.5rem;
+
 
 
 }
@@ -194,14 +198,25 @@ export const Container = styled.div `
   color:white;
   margin:0.8rem;
   font-family: 'Merriweather', serif;
+  line-height:2rem;
+  text-align:justify;
+
+
 
  
 }
 .projects .cards div a {
-  color:white;
-  margin:0.8rem; 
-  font-family: 'Merriweather', serif;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  background-color: black;
+ color:white;
+ border-radius:1rem;
+ font-size:1.5rem;
+ font-family: 'Roboto', sans-serif;
+ width: 99%;
 }
+ 
 
 .projects .cards div a:hover {
   color:darkgreen;
@@ -237,8 +252,16 @@ export const Container = styled.div `
   background-color: rgb(51,50,51);
   border-radius:1rem;
 }
+.hab .cards_hab div:hover {
+color: blue;
+background:green;
+}
+.hab .cards_hab div p::after {
+  color: blue;
+}
+
 .hab p  {
-  color: #828282;
+  color: white;
   text-align: center;
   margin-top: 10px;
   font-family: 'Roboto', serif;
@@ -287,9 +310,7 @@ export const Container = styled.div `
   border-radius:1rem;
 
 }
-.dados span li:hover{
-  background-color:rgb(49,83,236);
-}
+
 .dados span li a {
   display:flex;
   justify-content: center;
@@ -302,9 +323,29 @@ export const Container = styled.div `
   line-height: 2;
   padding:1rem;
   font-family: 'Merriweather', serif;
- 
+}
+.dados span li a:hover{
+  background-color:rgb(49,83,236);
+  border-radius: 1rem;
+  color:darkgreen;
+}
+footer {
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  background-color:rgb(51,50,51);
+  color:white;
+  width:100vw;
+  height:7vh;
 }
 
+footer .hab_used p {
+  display:inline-block;
+  padding: 0 6px;
+}
+footer .hab_used p svg {
+  font-size: 1.5rem;
+}
 /* Configurações para Mobile começa aqui */
 
 @media (max-width: 767px) {
@@ -325,7 +366,7 @@ export const Container = styled.div `
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 70vh;
+    height: 52vh;
     align-items: center;
   
   }
@@ -349,16 +390,17 @@ export const Container = styled.div `
   }
   .home .sobre li a {
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
   
   
 .home .sobre p {
   color: #828282;
   text-align: justify;
-  font-size: 1.5rem;
+  font-size: 1rem;
   word-spacing: -1px;
   margin: 2rem;
+  line-height: 2rem;
 }
 
 .apresentacao {
@@ -367,11 +409,9 @@ export const Container = styled.div `
   }
   .apresentacao .sobre p { 
     text-align: justify;
-    margin: 0;
-    padding: 0  1rem;
-    width: 100%;
+    width: 95%;
     hyphens: auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
   }
   .projects {
@@ -386,12 +426,17 @@ export const Container = styled.div `
   .projects .cards div {
     text-align: center;
     padding: 15px 0;
+    width: 72vw;
+    margin: 0 auto;
   }
   .projects .cards div img {
-    width: 330px;
-    height: 310px;
+    width: 285px;
+    height: 275px;
     background-repeat: no-repeat;
    
+  }
+  .projects .cards div p {
+    font-size: 12px;
   }
   .hab  {
   width: 100vw;

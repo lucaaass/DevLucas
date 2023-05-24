@@ -1,7 +1,6 @@
 import Menu from "../Menu";
 import Currículo from "../images/Currículo_Lucas.pdf"
 import Profile from "../images/profile.png"
-import Banner from "../images/banner.svg"
 import lmflix from "../images/lmflix.png"
 import lnews from "../images/lnews.png"
 import formulario from "../images/formulario.png"
@@ -73,9 +72,9 @@ Vejo como uma forma de adquirir experiências, às oportunidades que o mercado p
     
           </p>
           <p>
-          Acessar repositorio:
+          Acessar repositório:
           </p>
-          <a href="https://github.com/lucaaass/lm-flix" target="_blank" > github.com/lucaaass/lm-flix</a>
+          <a href="https://github.com/lucaaass/lm-flix" target="_blank" > <AiOutlineGithub /> Repositório Github  </a>
         </div>
         
 
@@ -86,10 +85,10 @@ Vejo como uma forma de adquirir experiências, às oportunidades que o mercado p
        Lnews é um projeto de portal de notícias, são as principais notícias do mundo, onde você pode visualizar toda noticia em um link externo, clicando em ver conteúdo.
        </p>
        <p>
-       Acessar repositorio:
+       Acessar repositório:
 
        </p>
-       <a href="https://github.com/lucaaass/lnews" target="_blank">github.com/lucaaass/lnews </a>
+       <a href="https://github.com/lucaaass/lnews" target="_blank"> <AiOutlineGithub /> Repositório Github </a>
         </div>
 
       <div>
@@ -99,9 +98,9 @@ Vejo como uma forma de adquirir experiências, às oportunidades que o mercado p
         </p>
         
         <p>
-        acessar repositorio:
+        acessar repositório:
         </p>
-        <a href="https://github.com/lucaaass/Formulario-de-contato" target="_blank" > github.com/lucaaass/Formulario-de-contato</a> 
+        <a href="https://github.com/lucaaass/Formulario-de-contato" target="_blank" > <AiOutlineGithub /> Repositório Github  </a> 
       </div>
 
     </div>
@@ -133,7 +132,7 @@ Vejo como uma forma de adquirir experiências, às oportunidades que o mercado p
        <span> 
          <li><a href="https://api.whatsapp.com/send?phone=5511985146523&text=Olá Lucas, Tudo bem ?" target="_blank"><AiOutlineWhatsApp /> (11)985146523</a></li>
          <li><a href= "mailto:lucasmarques630@gmail.com"  target="_blank"> <AiOutlineGoogle /> lucasmarques630@gmail.com</a> </li>
-         <li><a href="https://www.linkedin.com/in/lucas-marques-722032209/" target="_blank"><AiOutlineLinkedin /> https://www.linkedin.com/in/lucas-marques-722032209/</a></li>
+         <li><a href="https://www.linkedin.com/in/lucas-marques-722032209/" target="_blank"><AiOutlineLinkedin /> linkedin.com/in/lucas-marques-722032209/</a></li>
           <li><a href="https://github.com/lucaaass" target="_blank"> <AiOutlineGithub /> github.com/lucaaass</a> </li>
        </span>
      
@@ -142,11 +141,15 @@ Vejo como uma forma de adquirir experiências, às oportunidades que o mercado p
          </div>
 
          <footer>
-          <div style={{
-          
-            backgroundImage: `url(${Banner})`,
-            backgroundRepeat: 'no-repeat'
-          }}></div>
+    <div className="hab_used">
+    <p><AiFillHtml5 /> </p>
+    <p><DiCss3 /> </p> 
+    <p><DiJavascript1/> </p>
+    <p><DiReact /> </p>
+    <p><SiStyledcomponents /> </p>
+
+    </div>
+    <div className="dev">Desenvolvido por Lucas Marques</div>
           </footer>
          </Container>
 
