@@ -63,6 +63,7 @@ export const ContainerMenu = styled.div `
   box-shadow: inset -8.5rem 0 0 0 rgb(49,83,236),inset 8.5rem 0 0 0 rgb(49,83,236);
   color: darkgreen;
   transition: all 0.3s;
+  width: 100%;
   
 }
 
@@ -112,9 +113,9 @@ export const ContainerMenu = styled.div `
   .nav-list {
     display:flex;
     position: absolute;
-    top: 8vh;
+    top: 9vh;
     right: -30px;
-    width: 60vw;
+    width: 70vw;
     height: 94vh;
     background: #23232e;
     flex-direction: column;
@@ -128,10 +129,12 @@ export const ContainerMenu = styled.div `
   .nav-list ul { 
   display: flex;
   flex-direction:column;
+
 }
   .nav-list li {
     margin-left: 0;
     opacity: 0;
+   
     
   }
 
@@ -139,10 +142,13 @@ export const ContainerMenu = styled.div `
     font-size: 2rem;
     line-height: 3;
     text-decoration: none;
+    padding: 10px 5px;
+  
   }
   .mobile-menu {
     display: inline-block;
-    margin-left: 77%;
+    margin-left: auto;
+   
     
   }
  

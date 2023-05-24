@@ -173,7 +173,7 @@ export const Container = styled.div `
 
 .projects .cards div img {
     display:flex;   
-    width: 350px;
+    width: 80%;
     height: 280px;
     border-radius: 1rem;
     align-items: center;
@@ -350,23 +350,23 @@ footer .hab_used p svg {
 
 @media (max-width: 767px) {
   body {
-    width:95vw;
+  
     overflow-x: hidden;
     overflow-y: hidden;
   }
   
   .home .image img {
-    margin-top: 0.625rem;
+    
     height: 13rem;
     width: 13rem;
-    border-radius: 50%;
+    
     display: flex;
   }
   .home {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 52vh;
+ 
+    height: 67vh;
     align-items: center;
   
   }
@@ -376,6 +376,7 @@ footer .hab_used p svg {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
   }
   .home .sobre h2 {
       font-size: 3rem;
@@ -401,6 +402,7 @@ footer .hab_used p svg {
   word-spacing: -1px;
   margin: 2rem;
   line-height: 2rem;
+  width: auto;
 }
 
 .apresentacao {
@@ -409,7 +411,7 @@ footer .hab_used p svg {
   }
   .apresentacao .sobre p { 
     text-align: justify;
-    width: 95%;
+    width: 77%;
     hyphens: auto;
     font-size: 1rem;
 
@@ -426,11 +428,10 @@ footer .hab_used p svg {
   .projects .cards div {
     text-align: center;
     padding: 15px 0;
-    width: 72vw;
+    width: 80vw;
     margin: 0 auto;
   }
   .projects .cards div img {
-    width: 285px;
     height: 275px;
     background-repeat: no-repeat;
    
