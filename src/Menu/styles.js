@@ -114,8 +114,8 @@ export const ContainerMenu = styled.div `
     display:flex;
     position: absolute;
     top: 9vh;
-    right: -30px;
-    width: 70vw;
+    right: 0;
+    width: 60vw;
     height: 94vh;
     background: #23232e;
     flex-direction: column;
@@ -147,7 +147,7 @@ export const ContainerMenu = styled.div `
   }
   .mobile-menu {
     display: inline-block;
-    margin-left: auto;
+    margin-left: 70%;
    
     
   }

@@ -48,14 +48,14 @@ function Menu() {
       
     return(
       
-        <div className="nav">
-           <div className="mobile-menu" onClick={Menu} >
+        <div className="nav" >
+           <div className="mobile-menu" handleClick >
             <div className="line1"></div>
             <div className="line2"></div>
             <div className="line3"></div>
 
           </div> 
-          <div className="nav-list">
+          <div className="nav-list" handleClick>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>

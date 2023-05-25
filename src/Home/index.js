@@ -47,15 +47,17 @@ function Home() {
   <section className="sobre" id="sobre">
     <h1>Sobre mim</h1>
   <p>
-  25 Anos, um futuro programador em construção. Apaixonado por criar e desenvolver, amante da tecnologia, 
-  atualmente estou cursando análise e desenvolvimento de sistemas e atualmente estou trabalhando na área de logística.
+  Sou um desenvolvedor Front End Junior,
+ Com formação em análise e desenvolvimento de sistemas e atualmente estou trabalhando na área de logística.
+Amante da tecnologia e da programação,  Minha paixão por criar interfaces visuais atraentes e funcionais me impulsionou a buscar conhecimento em diversas tecnologias modernas.
+
   </p>
   <p>
   Meus objetivos:
   </p>
   <p>
-Em busca de realizar minha tão sonhada transição, para área de tecnologia, como Estagiário/Desenvolvedor 🧑🏻‍💻
-Vejo como uma forma de adquirir experiências, às oportunidades que o mercado pode me proporcionar e fazer o que eu amo programar.
+  Atualmente, estou em busca de uma oportunidade para expandir meu conhecimento e aplicar minhas habilidades em um ambiente profissional desafiador. 
+  Sou um profissional dedicado, motivado e sempre em busca de aprendizado contínuo. Se você está procurando um desenvolvedor Front End Junior talentoso, estou disponível para contribuir com suas metas e projetos.
       
         </p>
       </section>

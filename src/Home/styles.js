@@ -252,9 +252,9 @@ export const Container = styled.div `
   background-color: rgb(51,50,51);
   border-radius:1rem;
 }
-.hab .cards_hab div:hover {
+.hab .cards_hab div:hover  {
 color: blue;
-background:green;
+background: rgb(49, 83, 236);
 }
 .hab .cards_hab div p::after {
   color: blue;
@@ -345,6 +345,10 @@ footer .hab_used p {
 }
 footer .hab_used p svg {
   font-size: 1.5rem;
+}
+
+footer .dev {
+  font-family: 'Playfair Display', serif;
 }
 /* Configurações para Mobile começa aqui */
 
