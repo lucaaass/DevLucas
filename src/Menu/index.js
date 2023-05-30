@@ -17,12 +17,12 @@ const ToggleMode = () => {
       </div>
       <div className={active ? 'menu menoOpen' : 'menu menuClose'}>
         <div className="list">
-        <ul className="listItems" onClick={ToggleMode}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#apresentacao">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#hab">Habilidades</a></li>
-          <li><a href="#dados">Contatos</a></li>
+        <ul className="listItems" >
+          <li><a onClick={ToggleMode} href="#home">Home</a></li>
+          <li><a onClick={ToggleMode} href="#apresentacao">Sobre</a></li>
+          <li><a onClick={ToggleMode} href="#projects">Projetos</a></li>
+          <li><a onClick={ToggleMode} href="#hab">Habilidades</a></li>
+          <li><a onClick={ToggleMode} href="#dados">Contatos</a></li>
           
 
 
