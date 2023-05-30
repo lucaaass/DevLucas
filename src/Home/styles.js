@@ -2,24 +2,24 @@
 import styled from "styled-components"
 
 export const Container = styled.div `
-.home {
+`
+export const Home = styled.div `
   display: flex;
   justify-content:space-around;
   align-items: center;
   padding: 10rem 0px;
-  
-}
 
-.home .image img {
+  
+.image img {
   height: 23rem;
   width: 23rem;
   border-radius: 50%;
   display: flex;
   border: 7px solid blue;
- 
+  /* linearGradient */
   }
 
-.home .sobre {
+ .sobre {
   
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ export const Container = styled.div `
   justify-content:center ;
   text-align: center;
 }
-.home .sobre h2 {
+ .sobre h2 {
   color: white;
   font-size: 4rem;
   text-align: center;
@@ -36,7 +36,7 @@ export const Container = styled.div `
   font-family: 'Roboto', sans-serif;
  
 }
-.home .sobre h1 {
+.sobre h1 {
   color: rgb(49, 83, 236);
   font-size: 4rem;
   display: flex;
@@ -47,7 +47,7 @@ export const Container = styled.div `
   
 }
 
-.home .sobre h3 {
+.sobre h3 {
   color: green;
   font-size: 2rem;
   display: flex;
@@ -57,13 +57,13 @@ export const Container = styled.div `
   font-family: 'Roboto', sans-serif;
   
 }
-.home .sobre li {
+.sobre li {
   margin: 2rem 0;
   
   /* display: flex;
   flex-direction: column; */
 }
-.home .sobre li a  {
+.sobre li a  {
  background-color: rgb(51,50,51);
  color:white;
  padding:1rem;
@@ -73,13 +73,13 @@ export const Container = styled.div `
  
 
 }
-.home .sobre li a:hover {
+.sobre li a:hover {
   color:blue;
   transition: all 0.3s;
   background-color:green;
   box-shadow: 0 0 50px green, 0 0 200px green;
 }
-.home .sobre p {
+.sobre p {
   color: rgb(129 140 143);
   text-align: justify;
   font-size: 1.5rem;
@@ -92,22 +92,68 @@ export const Container = styled.div `
 
 }
 
-.home .sobre .autor {
+.sobre .autor {
   text-align: end;
   margin:-4rem 0;
   font-family: 'Merriweather', serif;
 
 }
+@media (max-width: 767px) {
+  display: flex;
+  flex-direction: column;
+  height: 67vh;
+  align-items: center;
 
-/* ------- home termina aqui */
+ .image img {
+  
+   height: 13rem;
+   width: 13rem;
+  
+   display: flex;
+ }
 
-/* ------- Sobre Começa aqui */
-.apresentacao {
-  width: 100%;
+.sobre {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 }
+.sobre h2 {
+    font-size: 3rem;
+}
+ .sobre h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5 rem;
+}
+ .sobre h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+.sobre li a {
+  padding: 1rem;
+  font-size: 1rem;
+}
 
-.apresentacao .sobre h1 {
+
+.sobre p {
+color: #828282;
+text-align: justify;
+font-size: 1rem;
+word-spacing: -1px;
+margin: 2rem;
+line-height: 2rem;
+width: auto;
+}
+}
+`
+
+
+export const Apresentacao = styled.div `
+width: 100%;
+
+ .sobre h1 {
   display: flex;
   width: 100%;
   text-align: center;
@@ -118,7 +164,7 @@ export const Container = styled.div `
   font-family: 'Playfair Display', serif;
 }
 
-.apresentacao .sobre p {
+ .sobre p {
   display: flex;
   text-align: justify;
   margin: auto;
@@ -127,20 +173,28 @@ export const Container = styled.div `
   font-size: 1.8rem;
   font-family: 'Merriweather', serif;
   line-height: 3rem;
-
-  
 }
 
-/* ------- Sobre termina aqui */
-.projects {
+@media (max-width: 767px) {
+     width: 100vw;
+    
+   .sobre p { 
+     text-align: justify;
+     width: 77%;
+     hyphens: auto;
+     font-size: 1rem;
+   }
+  }
+`
 
-  display: flex;
+export const Projects = styled.div `
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
 
-}
-.projects h1 {
+
+ h1 {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -150,7 +204,7 @@ export const Container = styled.div `
   font-family: 'Playfair Display', serif;
   
 }
-.projects .cards {
+ .cards {
   list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -158,20 +212,19 @@ export const Container = styled.div `
     width: 90vw;
 
 }
-.projects .cards div {
+ .cards div {
   background-color:rgb(51,50,51);
   border-radius:1rem;
   padding: 1rem 0rem;
 
 }
-.projects .cards div:hover {
+ .cards div:hover {
   background-color: blue;
   transition: all 0.3s;
   box-shadow: 0 0 50px rgb(49,83,236), 0 0 200px rgb(49,83,236);
-  
 }
 
-.projects .cards div img {
+.cards div img {
     display:flex;   
     width: 80%;
     height: 280px;
@@ -183,7 +236,7 @@ export const Container = styled.div `
     
 }
 
-.projects .cards div h3 {
+ .cards div h3 {
   display:flex;
   font-size:1.5rem;
   justify-content:center;
@@ -193,19 +246,15 @@ export const Container = styled.div `
 
 }
 
-.projects .cards div p {
+ .cards div p {
   margin-top:1rem;
   color:white;
   margin:0.8rem;
   font-family: 'Merriweather', serif;
   line-height:2rem;
   text-align:justify;
-
-
-
- 
 }
-.projects .cards div a {
+.cards div a {
   display: flex;
  align-items: center;
  justify-content: center;
@@ -217,20 +266,42 @@ export const Container = styled.div `
  width: 99%;
 }
  
-
-.projects .cards div a:hover {
+.cards div a:hover {
   color:darkgreen;
   transition: all 0.3s;
 }
 
-.hab {
+@media (max-width: 767px) {
+   width: 100vw;
+
+  .cards {
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+ }
+ .cards div {
+   text-align: center;
+   padding: 15px 0;
+   width: 80vw;
+   margin: 0 auto;
+ }
+ .cards div img {
+   height: 275px;
+   background-repeat: no-repeat;
+  
+ }
+ .cards div p {
+   font-size: 12px;
+ }
+}
+`
+export const Hab = styled.div `
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
-}
 
-.hab h1 {
+  .h1 {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -240,7 +311,7 @@ export const Container = styled.div `
   font-family: 'Playfair Display', serif;
 }
 
-.hab .cards_hab {
+ .cards_hab {
    list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -248,40 +319,44 @@ export const Container = styled.div `
     width: 90vw;
 
 }
-.hab .cards_hab div {
+ .cards_hab div {
   background-color: rgb(51,50,51);
   border-radius:1rem;
 }
-.hab .cards_hab div:hover  {
-color: blue;
+.cards_hab div:hover,
+.cards_hab div > span:hover  {
+color: green;
 background: rgb(49, 83, 236);
 }
-.hab .cards_hab div p::after {
-  color: blue;
-}
 
-.hab p  {
+p  {
   color: white;
   text-align: center;
   margin-top: 10px;
   font-family: 'Roboto', serif;
 
 }
-.hab  .cards_hab div p svg  {
+.cards_hab div p svg  {
   text-align: center;
   font-size:2rem;
   
 }
+@media (max-width: 767px) {
+ width: 100vw;
 
-.dados {
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
- 
+.cards_hab div img {
+ width: 30vw;
 }
+}
+`
+export const Dados = styled.div `
 
-.dados h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+
+ h1 {
   display: flex;
   width: 100%;
   text-align: center;
@@ -292,7 +367,7 @@ background: rgb(49, 83, 236);
   font-family: 'Playfair Display', serif;
 }
 
-.dados span {
+ span {
   list-style: none;
     display: grid;
     gap: 2rem;
@@ -300,10 +375,10 @@ background: rgb(49, 83, 236);
     width: 90vw;
 }
 
-.dados p svg {
+ p svg {
   font-size: 2.5rem;
 }
-.dados span li {
+ span li {
   display:grid;
   gap: 2rem;
   background-color:rgb(51,50,51);
@@ -311,7 +386,7 @@ background: rgb(49, 83, 236);
 
 }
 
-.dados span li a {
+ span li a {
   display:flex;
   justify-content: center;
   align-items:center;
@@ -324,134 +399,43 @@ background: rgb(49, 83, 236);
   padding:1rem;
   font-family: 'Merriweather', serif;
 }
-.dados span li a:hover{
+ span li a:hover{
   background-color:rgb(49,83,236);
   border-radius: 1rem;
   color:darkgreen;
 }
-footer {
+
+@media (max-width: 767px) {
+ 
+ span li a {
+    font-size: 1rem;
+   }
+ 
+ }
+ 
+`
+export const Footer = styled.footer `
   display: flex;
   justify-content:space-around;
   align-items:center;
   background-color:rgb(51,50,51);
   color:white;
   width:100vw;
-  height:7vh;
-}
-
-footer .hab_used p {
+ 
+ .hab_used p {
   display:inline-block;
   padding: 0 6px;
 }
-footer .hab_used p svg {
+ .hab_used p svg {
   font-size: 1.5rem;
 }
 
-footer .dev {
+ .dev {
   font-family: 'Playfair Display', serif;
 }
-/* Configurações para Mobile começa aqui */
-
-@media (max-width: 767px) {
-  body {
-  
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  
-  .home .image img {
-    
-    height: 13rem;
-    width: 13rem;
-    
-    display: flex;
-  }
-  .home {
-    display: flex;
-    flex-direction: column;
- 
-    height: 67vh;
-    align-items: center;
-  
-  }
-  .home .sobre {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-  }
-  .home .sobre h2 {
-      font-size: 3rem;
-  }
-  .home .sobre h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5 rem;
-  }
-  .home .sobre h3 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
-  }
-  .home .sobre li a {
-    padding: 1rem;
-    font-size: 1rem;
-}
-  
-  
-.home .sobre p {
-  color: #828282;
-  text-align: justify;
-  font-size: 1rem;
-  word-spacing: -1px;
-  margin: 2rem;
-  line-height: 2rem;
-  width: auto;
-}
-
-.apresentacao {
-    width: 100vw;
-    
-  }
-  .apresentacao .sobre p { 
-    text-align: justify;
-    width: 77%;
-    hyphens: auto;
-    font-size: 1rem;
-
-  }
-  .projects {
-    width: 100vw;
- 
-  }
-  .projects .cards {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .projects .cards div {
-    text-align: center;
-    padding: 15px 0;
-    width: 80vw;
-    margin: 0 auto;
-  }
-  .projects .cards div img {
-    height: 275px;
-    background-repeat: no-repeat;
-   
-  }
-  .projects .cards div p {
-    font-size: 12px;
-  }
-  .hab  {
-  width: 100vw;
-}
-.hab .cards_hab div img {
-width: 30vw;
-}
-.dados span li a {
-   font-size: 1rem;
-  }
-
-}
 `
+
+
+
+
+

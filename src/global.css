@@ -8,3 +8,10 @@ body {
   background: black;
  
 }
+/* @media (max-width: 767px) {
+     body {
+    
+     overflow-x: hidden;
+      overflow-y: hidden;
+    }
+  } */
