@@ -95,7 +95,7 @@ export const ContainerMenu = styled.div`
       padding: 0;
       justify-content: space-around;
       width: 50vw;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
       
       
     }
